@@ -1,6 +1,6 @@
 body {
     background-color: aqua;
-    font-size: 24pt;
+    font-size: 12pt;
 }
 
 h1 {
@@ -19,6 +19,10 @@ div.main {
     opacity: 100;
 }
 
+div.main.sub {
+    font-size: 10pt;
+}
+
 div.end {
     position:relative;
 }
@@ -26,7 +30,7 @@ div.end {
 span.stress {
     display: inline;
     color: #d42a0c;
-    font-size: 30pt;
+    font-size: 18pt;
     font-weight: bold;
 }
 

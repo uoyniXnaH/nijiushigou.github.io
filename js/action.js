@@ -2,7 +2,7 @@
 function pageReady() {
     var titlePos = 30;
     var contPos = 60;
-    var contOffset = 20;
+    var contOffset = 30;
     var i;
     $("#title").css("opacity", "100");
     $("#title").css("top", `${titlePos}%`);
@@ -10,4 +10,5 @@ function pageReady() {
         $(`#cont_${i}`).css("top", `${contPos}%`);
         contPos += contOffset;
     }
+    $("#cmt").css("top", `${contPos}%`)
 }
