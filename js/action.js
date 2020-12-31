@@ -17,8 +17,7 @@ var flagPos = [
     0.92
 ];
 
-var pageHgt = $(document.documentElement.scrollHeight)[0];
-console.log(`We got ${pageHgt}`);
+var pageHgt;
 document.addEventListener("scroll", scrollCallback);
 
 function scrollCallback() {
@@ -28,7 +27,6 @@ function scrollCallback() {
     for (i=1;i<=15;i++) {
         if (posRel>=flagPos[i-1]) {
             $(`#cont_${i}`).css("opacity", "100");
-            console.log(`On ${posAbs} of ${pageHgt}`);
         }
     }
 }
@@ -48,4 +46,8 @@ function pageReady() {
     }
     $("#cmt").css("top", `${contPos}%`);
     $("#cmt").css("opacity", "100");
+
+    // get page height after layout is completed
+    pageHgt = $(document.documentElement.scrollHeight)[0];
+    console.log(`We got ${pageHgt}`);
 }
