@@ -1,20 +1,20 @@
 // preset scroll position for contents
 var flagPos = [
-    0.03,
-    0.10,
-    0.16,
-    0.22,
-    0.28,
-    0.34,
-    0.4,
-    0.46,
-    0.52,
-    0.58,
-    0.64,
-    0.7,
-    0.76,
-    0.82,
-    0.88
+    0.01,
+    0.06,
+    0.12,
+    0.18,
+    0.24,
+    0.3,
+    0.36,
+    0.42,
+    0.48,
+    0.54,
+    0.6,
+    0.66,
+    0.72,
+    0.78,
+    0.84
 ];
 
 var pageHgt;
@@ -27,6 +27,7 @@ function scrollCallback() {
     for (i=1;i<=15;i++) {
         if (posRel>=flagPos[i-1]) {
             $(`#cont_${i}`).css("opacity", "100");
+            $(`#sub_${i}`).css("opacity", "100");
         }
     }
 }
