@@ -28,6 +28,7 @@ function scrollCallback() {
         if (posRel>=flagPos[i-1]) {
             $(`#cont_${i}`).css("opacity", "100");
             $(`#sub_${i}`).css("opacity", "100");
+            $(`#img_${i}`).css("opacity", "100");
         }
     }
 }
