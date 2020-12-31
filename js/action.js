@@ -17,7 +17,7 @@ var flagPos = [
     0.92
 ];
 
-var pageHgt = document.documentElement.scrollHeight;
+var pageHgt = $(document.documentElement.scrollHeight)[0];
 console.log(`We got ${pageHgt}`);
 document.addEventListener("scroll", scrollCallback);
 
