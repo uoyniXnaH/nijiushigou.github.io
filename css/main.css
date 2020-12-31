@@ -1,10 +1,15 @@
+@font-face {
+    font-family: ZCool;
+    src: url(/nijiushigou.github.io/resources/fonts/ZCOOLKuaiLe-Regular.ttf)
+}
+
 body {
     background-color: aqua;
     font-size: 12pt;
 }
 
 h1 {
-    text-align: center;
+    font-size: 28pt;
 }
 
 h1.main {
@@ -19,18 +24,34 @@ div.main {
     opacity: 100;
 }
 
+div.main.section {
+    font-size: 15pt;
+    font-family: ZCool;
+}
+
+div.main.cont {
+    font-size: 12pt;
+}
+
 div.main.sub {
     font-size: 10pt;
 }
 
 div.end {
-    position:relative;
+    position:absolute;
 }
 
 span.stress {
     display: inline;
     color: #d42a0c;
     font-size: 18pt;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#keyword {
+    font-size: 24pt;
     font-weight: bold;
 }
 
