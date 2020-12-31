@@ -1,20 +1,20 @@
 // preset scroll position for contents
 var flagPos = [
     0.01,
-    0.06,
-    0.12,
-    0.18,
-    0.24,
-    0.3,
-    0.36,
-    0.42,
-    0.48,
-    0.54,
-    0.6,
-    0.66,
-    0.72,
-    0.78,
-    0.84
+    0.03,
+    0.09,
+    0.15,
+    0.21,
+    0.27,
+    0.33,
+    0.39,
+    0.45,
+    0.51,
+    0.57,
+    0.63,
+    0.69,
+    0.75,
+    0.79
 ];
 
 var pageHgt;
@@ -50,5 +50,4 @@ function pageReady() {
 
     // get page height after layout is completed
     pageHgt = $(document.documentElement.scrollHeight)[0];
-    console.log(`We got ${pageHgt}`);
 }
