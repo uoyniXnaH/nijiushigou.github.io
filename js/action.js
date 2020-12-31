@@ -24,12 +24,17 @@ function scrollCallback() {
     var posAbs = window.scrollY;
     
     var posRel = posAbs / pageHgt;
-    for (i=1;i<=15;i++) {
+    for (i=1;i<=14;i++) {
         if (posRel>=flagPos[i-1]) {
-            $(`#cont_${i}`).css("opacity", "100");
-            $(`#sub_${i}`).css("opacity", "100");
-            $(`#img_${i}`).css("opacity", "100");
+            $(`#cont_${i}`).css("opacity", "1");
+            $(`#sub_${i}`).css("opacity", "1");
+            $(`#img_${i}`).css("opacity", "0.6");
         }
+    }
+    if (posRel>=flagPos[14]) {
+        $("#cont_15").css("opacity", "1");
+        $("#sub_15").css("opacity", "1");
+        $("img_15").css("opacity", "1");
     }
 }
 
@@ -40,14 +45,14 @@ function pageReady() {
     var contOffset = 30;
     var i;
     $("#title").css("top", `${titlePos}%`);
-    $("#title").css("opacity", "100");
+    $("#title").css("opacity", "1");
     $("#cont_1").css("top", `${secPos}%`);
     for (i=2;i<=15;i++) {
         $(`#cont_${i}`).css("top", `${contPos}%`);
         contPos += contOffset;
     }
     $("#cmt").css("top", `${contPos}%`);
-    $("#cmt").css("opacity", "100");
+    $("#cmt").css("opacity", "1");
 
     // get page height after layout is completed
     pageHgt = $(document.documentElement.scrollHeight)[0];
