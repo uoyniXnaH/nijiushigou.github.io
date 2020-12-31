@@ -9,7 +9,8 @@ body {
 }
 
 h1 {
-    font-size: 28pt;
+    font-size: 20pt;
+    font-family: ZCool;
 }
 
 h1.main {
@@ -21,7 +22,7 @@ h1.main {
 div.main {
     position: absolute;
     transition: 1s;
-    opacity: 100;
+    opacity: 0;
 }
 
 div.main.section {
@@ -39,6 +40,8 @@ div.main.sub {
 
 div.end {
     position:absolute;
+    font-size: 10pt;
+    opacity: 0;
 }
 
 span.stress {
